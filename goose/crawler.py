@@ -214,8 +214,7 @@ class Crawler(object):
         # fetch HTML
         html = self.htmlfetcher.get_html(parsing_candidate.url)
         self.article.additional_data.update({
-            'request': self.htmlfetcher.request,
-            'result': self.htmlfetcher.result,
+            'result': self.htmlfetcher.result
             })
         return html
 
